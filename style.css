@@ -1,0 +1,337 @@
+ /* reset */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* effect to all section */
+section{
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Header section*/
+.header-content{
+    background-image: url('images/header-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.half-width{
+    width: 40%;
+    float: left;  
+}
+
+.half-width p{
+    font-size: 20px;
+    color: dimgray;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.half-width  h2{
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.half-width h1{
+    font-size: 50px;
+    color: #EC4C7A;
+    margin-top:2%;
+}
+
+.left-content{
+    margin-top: 10%;
+    padding-left: 15%;
+}
+
+.half-width img{
+    width: 100%;
+    margin-bottom:39%;
+    margin-top: 10%;
+}
+
+.header-img{
+    margin-left: -10%;
+}
+
+.button{
+    text-decoration: none;
+    background-image: linear-gradient(to right, #ec5093, #ed4e8b, #ed4d83, #ed4c7b, #ed4b73);
+    padding:15px 50px;
+    border-radius: 10px;
+    color:white;
+    text-transform: uppercase;
+    font-size: 20px;
+    border:none;
+}
+.button:hover{
+    background-image: linear-gradient(to right, #ffa033, #ffab2d, #ffb726, #ffc220, #ffce1a);
+}
+
+.margin-p{
+    margin-bottom: 10%;
+}
+
+
+/* BIOGRAPHY */
+.biography{
+    background-image: url('images/biography-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.right-content{
+    margin-top: 10%;
+    padding-left: 15%;
+    padding-right: 5%;
+}
+
+.biography-img{
+    padding-left: 20%;
+}
+
+/* Latest work */
+
+.latest-work{
+    background-image: url('images/latest-work-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+.latest-work h1{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.latest-images img{
+    width: 31%;
+    margin: 1%;
+    float: left;
+}
+
+/* footer section */
+
+.footer-wrapper{
+    background-image: url('images/footer-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    text-align: center;
+    height: auto ;
+    width: auto;
+    overflow: hidden;
+}
+
+.client-review h1{
+    font-size: 40px;
+    margin-bottom:5%;
+}
+
+.client-review h3{
+    font-size: 20px;
+    margin-bottom: 1%;
+}
+
+.client-review small{
+    font-size: 16px;
+    color: dimgray;
+}
+
+.review{
+    width: 40%;
+    margin: 3% auto;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.contact-email-box{
+    background-image: linear-gradient(to right, #ec5093, #ed4e8b, #ed4d83, #ed4c7b, #ed4b73);
+    width:60%;
+    border-radius: 10px;
+    margin: 10% auto;
+    padding: 2% 0;
+    color:#fff;
+}
+
+.contact-email-box p{
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.contact-email-box h3{
+    
+    letter-spacing: 3px;
+}
+
+.copy-right{
+    text-align: center;
+    color: dimgray;
+    padding: 1% 0; 
+}
+
+/* Responsiveness with media query (Learned from assignment) */
+
+/* for smart phones */
+@media only screen and (min-width:320px) and (max-width:480px){
+
+    /* header section responsive */
+    .header-content{
+        padding-top:5%;
+    }
+    .half-width{
+        width: 100%; 
+        margin: 0 auto;
+    }
+ 
+    .half-width p{
+        font-size: 12px;
+        width: 90%;
+        justify-content: center;
+    }
+
+    .half-width  h2{
+        font-size: 20px;
+    }
+
+    .half-width h1{
+        font-size:25px;
+    }
+
+    .left-content{
+        padding-left: 5%;
+    }
+    
+    .header-img{
+        margin-left: 0;
+    }
+    .contact-email-box p{
+        letter-spacing: 1px;
+    }
+    
+    .contact-email-box h3{
+        
+        letter-spacing: 1px;
+    }
+
+    /* biography responsive */
+    .right-content{     
+        margin-bottom: 20%;
+        padding-left: 5%;
+    }
+
+    .biography-img{
+        padding-left: 0;
+        margin-bottom: 10% !important;
+    }
+
+    /* Latest work responsive*/
+
+    .latest-work{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .latest-work h1{
+        font-size: 25px;
+    }
+
+    .latest-images img{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+/* footer responsiveness */
+
+    .client-review h1{
+        font-size: 25px;
+    }
+
+    .client-review h3{
+        font-size:16px;
+    }
+
+    .client-review small{
+        font-size: 14px;
+    }
+
+    .review{
+        width: 90%;
+        margin: 5% auto;
+    }
+
+    .contact-email-box{
+        width:90%;
+        padding: 3% 0;
+    }
+
+    .contact-email-box p{
+        font-size: 14px;
+        margin: 5% auto;
+    }
+    
+    .contact-email-box h3{
+        font-size: 16px;
+    }
+
+    .copy-right{
+        padding: 5% 0;
+        font-size: 14px;
+    }    
+
+}
+
+/* for ipad devices*/
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+
+    .half-width p{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .half-width  h2{
+        font-size: 24px;
+    }
+    .half-width h1{
+        font-size: 32px;
+        margin-top:2%;
+    }
+    
+    .left-content{
+        padding-left: 15%;
+    }
+    
+    .half-width img{
+        width: 100%;
+        margin-bottom:50%;
+        margin-top: 25%;
+    }
+    
+    .latest-work h1{
+        font-size: 32px;
+    }
+
+    .client-review h1{
+        font-size: 32px;
+    }
+
+    .review{
+        width: 80%;
+        margin: 5% auto;
+    }
+
+    .contact-email-box{
+        width:80%;
+        padding: 3% 0;
+    }
+
+}
